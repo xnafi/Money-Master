@@ -24,44 +24,44 @@
         >
           <h1 class="text-2xl font-bold mt-10">Income</h1>
           <label for="input" class="font-medium text-lg"
-            >Income : <input class="rounded-lg pl-2 border-2" type="number"
+            >Income : <input id="income" class="rounded-lg pl-2 border-2" value="0" type="number"
           /></label>
           <h1 class="text-2xl font-bold">Expenses</h1>
           <label for="input" class="font-medium text-lg text-left"
-            >Food : <input class="rounded-lg pl-2 border-2" type="number"
+            >Food : <input id="food" class="rounded-lg pl-2 border-2" value="0" type="number"
           /></label>
           <label for="input" class="font-medium text-lg"
-            >Rent : <input class="rounded-lg pl-2 border-2" type="number"
+            >Rent : <input id="rent" class="rounded-lg pl-2 border-2" value="0" type="number"
           /></label>
           <label for="input" class="font-medium text-lg"
-            >Clothes : <input class="rounded-lg pl-2 border-2" type="number"
+            >Clothes : <input id="cloth" class="rounded-lg pl-2 border-2" value="0" type="number"
           /></label>
-          <button
+          <button id="calculate"
             class="bg-blue-800 font-semibold text-white px-6 py-3 rounded-lg"
           >
             Calculate
           </button>
 
           <h1 class="text-2xl font-bold">
-            Total Expenses <span id="">5500</span>
+            Total Expenses $<span id="expense"></span>
           </h1>
           <h1 class="text-2xl font-bold">
-            Total Balance <span id="">5500</span>
+            Total Balance $<span id="total-balance"></span>
           </h1>
           <label for="input" class="font-medium text-lg"
             >Save :
-            <input class="rounded-lg pl-2 border-2 w-40" type="number" /> %
+            <input id="save" class="rounded-lg pl-2 border-2 w-40" value="0" type="number" /> %
             <button
-              class="bg-blue-800 font-semibold text-white px-6 py-1 rounded-lg"
+              id="saving-amount" class="bg-blue-800 font-semibold text-white px-6 py-1 rounded-lg"
             >
               Save
             </button></label
           >
           <h1 class="text-2xl font-bold">
-            Saving Amount <span id="">5500</span>
+            Saving Amount $<span id="saving"></span>
           </h1>
           <h1 class="text-2xl font-bold">
-            Remaining Amount <span id="">5500</span>
+            Remaining Amount $<span id="total"></span>
           </h1>
         </div>
       </div>
