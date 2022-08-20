@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Money Master</title>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-2xl md:text-5xl font-bold">
+        Money <span class="text-red-700">Bank</span>
+      </h1>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 my-10 container mx-auto w-100 h-100 gap-x-20"
+      >
+        <div class="">
+          <img src="Picture.png" class="object-contain" alt="" />
+        </div>
+
+        <div
+          class="flex text-left items-center flex-col space-y-5 bg-[#F8F8F8]"
+        >
+          <h1 class="text-2xl font-bold mt-10">Income</h1>
+          <label for="input" class="font-medium text-lg"
+            >Income : <input class="rounded-lg pl-2 border-2" type="number"
+          /></label>
+          <h1 class="text-2xl font-bold">Expenses</h1>
+          <label for="input" class="font-medium text-lg text-left"
+            >Food : <input class="rounded-lg pl-2 border-2" type="number"
+          /></label>
+          <label for="input" class="font-medium text-lg"
+            >Rent : <input class="rounded-lg pl-2 border-2" type="number"
+          /></label>
+          <label for="input" class="font-medium text-lg"
+            >Clothes : <input class="rounded-lg pl-2 border-2" type="number"
+          /></label>
+          <button
+            class="bg-blue-800 font-semibold text-white px-6 py-3 rounded-lg"
+          >
+            Calculate
+          </button>
+
+          <h1 class="text-2xl font-bold">
+            Total Expenses <span id="">5500</span>
+          </h1>
+          <h1 class="text-2xl font-bold">
+            Total Balance <span id="">5500</span>
+          </h1>
+          <label for="input" class="font-medium text-lg"
+            >Save :
+            <input class="rounded-lg pl-2 border-2 w-40" type="number" /> %
+            <button
+              class="bg-blue-800 font-semibold text-white px-6 py-1 rounded-lg"
+            >
+              Save
+            </button></label
+          >
+          <h1 class="text-2xl font-bold">
+            Saving Amount <span id="">5500</span>
+          </h1>
+          <h1 class="text-2xl font-bold">
+            Remaining Amount <span id="">5500</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>
